@@ -3,16 +3,17 @@
   "version": "1.0.0",
   "main": "truffle-config.js",
   "directories": {
-    "test": "test"
+    "test": "truffle test --network test",
+    "migrate": "truffle migrate --network test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "truffle test --network test"
   },
   "keywords": [],
   "author": "Hans Tjipto <hansbrians@gmail.com> (styletribute.com)",
   "license": "ISC",
   "dependencies": {
-    "zeppelin-solidity": "1.7.0"
+    "zeppelin-solidity": "1.9.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
